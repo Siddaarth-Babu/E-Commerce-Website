@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siworld</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body >
+
+    <!-- <div id="preloader">
+        <div id="circle">
+            <div class="loader">
+                <div class="loader">
+                    <div class="loader">
+                        <div class="loader"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    
+    <section class="titlebar">
+        <a href="#">
+            <img class = "company-logo" src="images\logo.png">
+        </a>
+        <div id="header">
+            <ul id="navbar">
+                <i id="cross" class="fa fa-times"></i>
+                <li><a href="siworld.html">Home</a></li>
+                <li><a>Smart Phone</a></li>
+                <li><a>Laptops</a></li>
+                <li><a>Other Gadget</a></li>
+            </ul>
+            <div class="cartFamily">
+                <span class="cartQuantity">0</span>
+                <div class="icon"><img class="cart-icon" src="images\cart.png"></div>
+            </div>
+            <div id="mobile">
+                <i id="menu" class="fa fa-bars"></i>
+            </div>
+        </div>
+    </section>
+
+    <div class="showcart">
+        <div class="heading">Shopping Cart</div>
+        <div class="itemslist">
+            <div class="summary" class="real">
+                <img class="cart-image" src="images/phone1-removebg-preview.png">
+                <div class="product-name">Redmi Note 11</div>
+                <div class="price">Rs 19999</div>
+                <div class="quantity">
+                    <button class="minus">-</button>
+                    <span class="numberof">1</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="rate">Total Amount = Rs <span id="total-cost"></span></div>
+        <div class="btn">
+            <button id="close">Close</button>
+            <button id="checkout">Check Out</button>
+        </div>
+    </div>
+    
+        
+
+    <div id="sale">
+        <img src="images\poster-removebg-preview.png" class="poster">
+    </div>
+
+    <div class="parentCaption"><div class="caption">Best Selling Items</div></div>
+
+    <div class="products">
+        <div class="container">
+            <div class="gadget"><img class = "template" src="images/laptop3-removebg-preview.png"></div>
+            <div>
+                <div class="company brand" >
+                    Dell Inspiron 16
+                </div>
+                <div class="company">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="company"><strong class="worth">Rs 68000</strong></div>
+                <button class="cart" id="button0" data-product-name="Dell" data-product-price="68000" data-image-source="images\laptop3-removebg-preview.png">Add to Cart</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gadget"><img class = "template" src="images/head2-removebg-preview.png"></div>
+            <div>
+                <div class="company brand">
+                    Noise Earpods L4
+                </div>
+                <div class="company">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="company"><strong class="worth">Rs 2700</strong></div>
+                <button class="cart" id="button1" data-product-name="Noise Earpods" data-product-price="2700" data-image-source="images\head2-removebg-preview.png">Add to Cart</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gadget"><img class = "template" src="images/tv1-removebg-preview.png"></div>
+            <div>
+                <div class="company brand">
+                    Samsung SmartTV 55"
+                </div>
+                <div class="company">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="company"><strong class="worth">Rs 50000</strong></div>
+                <button class="cart" id="button2" data-product-name="Samsung SmartTV" data-product-price="50000" data-image-source="images\tv1-removebg-preview.png">Add to Cart</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gadget"><img class = "template" src="images/phone2-removebg-preview.png"></div>
+            <div>
+                <div class="company brand">
+                    Samsung Galaxy M52
+                </div>
+                <div class="company">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="company"><strong class="worth">Rs 24000</strong></div>
+                <button class="cart" id="button3" data-product-name="Samsung Galaxy M52" data-product-price="24000" data-image-source="images\phone2-removebg-preview.png">Add to Cart</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gadget"><img class = "template" src="images/phone3-removebg-preview.png"></div>
+            <div>
+                <div class="company brand">
+                    Google Pixel 6
+                </div>
+                <div class="company">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="company"><strong class="worth">Rs 70000</strong></div>
+                <button class="cart" id="button4" data-product-name="Google Pixel 6" data-product-price="70000" data-image-source="images\phone3-removebg-preview.png">Add to Cart</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gadget"><img class = "template" src="images/tv3-removebg-preview.png"></div>
+            <div>
+                <div class="company brand">
+                    Sony LED TV
+                </div>
+                <div class="company">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="company"><strong class="worth">Rs 60000</strong></div>
+                <button class="cart" id="button5" data-product-name="Sony LED TV" data-product-price="60000" data-image-source="images\tv3-removebg-preview.png">Add to Cart</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gadget"><img class = "template" src="images/pc1-removebg-preview.png"></div>
+            <div>
+                <div class="company brand">
+                    Asus Gaming PC
+                </div>
+                <div class="company">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="company"><strong class="worth">Rs 40000</strong></div>
+                <button class="cart" id="button6" data-product-name="Asus Gaming PC" data-product-price="40000" data-image-source="images\pc1-removebg-preview.png">Add to Cart</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gadget"><img class = "template" src="images/phone4-removebg-preview.png"></div>
+            <div>
+                <div class="company brand">
+                    Galaxy Z Fold5
+                </div>
+                <div class="company">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="company"><strong class="worth">Rs 160000</strong></div>
+                <button class="cart" id="button7" data-product-name="Galaxy Z Fold5" data-product-price="160000" data-image-source="images\phone4-removebg-preview.png">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="caption">Best Discount Offers</div>
+
+    <div class="products">
+        <div class="container">
+            <div class="gadget"><img class = "template" src="images/phone1-removebg-preview.png"></div>
+            <div>
+                <div class="company brand">
+                    Redmi Note 13
+                </div>
+                <div class="company">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="company"><strong class="worth">Rs 20000</strong></div>
+                <button class="cart" id="button8" data-product-name="Redmi Note 13" data-product-price="20000" data-image-source="images\phone1-removebg-preview.png">Add to Cart</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gadget"><img class = "template" src="images/laptop1-removebg-preview.png"></div>
+            <div>
+                <div class="company brand">
+                    MacBook Pro M3
+                </div>
+                <div class="company">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="company"><strong class="worth">Rs 150000</strong></div>
+                <button class="cart" id="button9" data-product-name="MacBook Pro M3" data-product-price="150000" data-image-source="images\laptop1-removebg-preview.png">Add to Cart</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gadget"><img class = "template" src="images/watch1-removebg-preview.png"></div>
+            <div>
+                <div class="company brand">
+                    boAt X600
+                </div>
+                <div class="company">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="company"><strong class="worth">Rs 2500</strong></div>
+                <button class="cart" id="button10" data-product-name="boAt X600" data-product-price="2500" data-image-source="images\watch1-removebg-preview.png">Add to Cart</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gadget"><img class = "template" src="images/tab1-removebg-preview.png"></div>
+            <div>
+                <div class="company brand">
+                    iPad Air
+                </div>
+                <div class="company">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="company"><strong class="worth">Rs 60000</strong></div>
+                <button class="cart" id="button11" data-product-name="iPad Air" data-product-price="60000" data-image-source="images\tab1-removebg-preview.png">Add to Cart</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gadget"><img class = "template" src="images/fridge1-removebg-preview.png"></div>
+            <div>
+                <div class="company brand">
+                    Whirlpool 184X 2
+                </div>
+                <div class="company">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="company"><strong class="worth">Rs 27000</strong></div>
+                <button class="cart" id="button12" data-product-name="Whirlpool 184X 2" data-product-price="27000" data-image-source="images\fridge1-removebg-preview.png">Add to Cart</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gadget"><img class = "template" src="images/tab2-removebg-preview.png"></div>
+            <div>
+                <div class="company brand">
+                    Galaxy Tab S9
+                </div>
+                <div class="company">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="company"><strong class="worth">Rs 115000</strong></div>
+                <button class="cart" id="button13" data-product-name="Galaxy Tab S9" data-product-price="115000" data-image-source="images\tab2-removebg-preview.png">Add to Cart</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gadget"><img class = "template" src="images/watch3-removebg-preview.png"></div>
+            <div>
+                <div class="company brand">
+                    Starmax CX3
+                </div>
+                <div class="company">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="company"><strong class="worth">Rs 15000</strong></div>
+                <button class="cart" id="button14" data-product-name="Starmax CX3" data-product-price="15000" data-image-source="images\watch3-removebg-preview.png">Add to Cart</button>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gadget"><img class = "template" src="images/head1-removebg-preview.png"></div>
+            <div>
+                <div class="company brand">
+                    Sony WH-100X
+                </div>
+                <div class="company">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="company"><strong class="worth">Rs 36000</strong></div>
+                <button class="cart" id="button15" data-product-name="Sony WH-100X" data-product-price="36000" data-image-source="images\head1-removebg-preview.png">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="products">
+        
+    </div>
+
+    <div class="Account">
+        <div>See personalised recommendations</div>
+        <button class="login">Sign in</button>
+        <div>New customer ? <span id="create">Start here</span></div>
+    </div>
+
+    <footer class="footer">
+        <div class="column" id="change3">
+            <img class="logo" src="images\logo.png">
+            <h4>Contact</h4>
+            <p id="add"><strong>Address :- </strong>Wellington Enclave, Street 40, Germany</p>
+            <p id="call"><strong>Phone :- </strong> +01 4554 625/(+91) 01 2345 6789</p>
+            <p id="vtime"><strong>Hours :- </strong> 10:00 - 20:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-instagram"></i>
+                </div>
+            </div>    
+        </div>
+        <div class="column">
+            <h4>About</h4>
+            <p>About us</p>
+            <p>Delivery Information</p>
+            <p>Privacy Policy</p>
+            <p>Terms and Conditions</p>
+            <p>Contact Us</p>
+        </div>
+        <div class="column" id="change1">
+            <h4>My Contact</h4>
+            <p>Sign in</p>
+            <p>View Cart</p>
+            <p>My Wishlist</p>
+            <p>Track My Order</p>
+            <p>Help</p>
+        </div>
+        <div class="column" id="change2">
+            <h4>Install App</h4>
+            <p id="direction1">From App Store or Google play</p>
+            <div class="install">
+                <img src="images\playstore.png">
+                <img src="images\apple.jpeg">
+            </div>
+            <div class="mobile-install">
+                <img src="images/mob-play.png">
+                <img src="images/mob-apple.png">
+            </div>
+            <p id="direction2">Secured Payment Gateways</p>
+            <div class="pay">
+                <img src="images\Visa.png">
+                <img src="images\mc.jpeg">
+                <img src="images\maestro.png">
+                <img src="images\ae.jpg">
+            </div>
+        </div>
+    </footer>
+    <p id="copyright">© 2024. Siddaarth Babu. All Rights Reserved</p>
+
+ <script src="siworld.js"></script>   
+</body>
+</html>

@@ -89,9 +89,12 @@ p{
    text-align: center;
 }
 
+#navbar li a{
+   color: white;
+}
+
 #navbar li a:link, #navbar li a:visited{
    text-decoration: none;
-   color: initial;
 }
 
 .cart-icon{
